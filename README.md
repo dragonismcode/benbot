@@ -46,7 +46,7 @@ DOGEHOUSE_REFRESH_TOKEN=<refresh-token>
 !joke - Gives you a programming joke from an API.  <br>
 !rolldice - Randomly chooses a number from 1 to 6.  <br>
 !slap (user) - Slaps the user on the face.  <br>
-!yeet (user) - Yeets the user across the world.
+!yeet (user) - Yeets the user across the world. <br>
 !github - Links this repository!
 </p>
 
