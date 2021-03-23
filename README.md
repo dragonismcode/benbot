@@ -11,6 +11,26 @@
 </p>
 
 <h3 align="center">
+  <strong>Installation</strong>
+</h3>
+
+If you don't know already, install the packages with this command:
+
+```
+npm install
+```
+
+1. Go to https://dogehouse.tv
+2. Open Developer options (F12 or Ctrl+Shift+I)
+3. Go to Application > Local Storage > dogehouse.tv
+4. Copy your token and refresh-token and put them in an .env file:
+
+```
+DOGEHOUSE_TOKEN=<token>
+DOGEHOUSE_REFRESH_TOKEN=<refresh-token>
+```
+
+<h3 align="center">
   <strong>Commands</strong>
 </h3>
 
