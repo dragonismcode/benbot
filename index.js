@@ -264,6 +264,23 @@ const main = async () => {
         doTheFunny();
       }
 
+      if (msg.tokens[0].v.toLowerCase() === "!dadjoke") {
+        function doTheUnfunny() {
+          fetch("https://icanhazdadjoke.com/slack")
+            .then((response) => response.json())
+            .then(async (data) => {
+              await wrapper.sendRoomChatMsg([
+                {
+                  t: "text",
+                  v: data.attachments[0].text
+                }
+              ]);
+            });
+        }
+
+        doTheUnfunny();
+      }
+
       if (msg.tokens[0].v.toLowerCase() === "!requestspeaker") {
         if (msg.userId === "b4c3169e-9ae4-4fb8-a4a2-bdfce065a6a5") {
           await connection.send("ask_to_speak", {});
