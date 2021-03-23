@@ -37,7 +37,7 @@ DOGEHOUSE_REFRESH_TOKEN=<refresh-token>
 </h3>
 
 <p align="center">
-  !creator - Lists the creator of BenBot and contributors.  <br>
+!creator - Lists the creator of BenBot and contributors.  <br>
 !findcute - Finds a cute person.. which is you!  <br>
 !whereami - Shows that room you are in.  <br>
 !whoami - Shows what your username and userId.  <br>
@@ -48,6 +48,7 @@ DOGEHOUSE_REFRESH_TOKEN=<refresh-token>
 !joke - Gives you a programming joke from an API.  <br>
 !dadjoke - Gives you a dad joke from an API. <br>
 !rolldice - Randomly chooses a number from 1 to 6.  <br>
+!coinflip - Flips a coin.  <br>
 !slap (user) - Slaps the user on the face.  <br>
 !yeet (user) - Yeets the user across the world. <br>
 !github - Links this repository!
