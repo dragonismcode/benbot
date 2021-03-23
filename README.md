@@ -47,5 +47,6 @@ DOGEHOUSE_REFRESH_TOKEN=<refresh-token>
 !rolldice - Randomly chooses a number from 1 to 6.  <br>
 !slap (user) - Slaps the user on the face.  <br>
 !yeet (user) - Yeets the user across the world.
+!github - Links this repository!
 </p>
 
