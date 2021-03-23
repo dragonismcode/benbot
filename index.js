@@ -144,7 +144,7 @@ const main = async () => {
           {
             t: "text",
             v:
-              "𝗟𝗶𝘀𝘁 𝗼𝗳 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀: !8ball ● !slap (user) ● !yeet (user) ● !say (words) ● !joke ● !howgay ● !owoify (text) ● !rolldice ● !findcute ● !whoami ● !whereami ● !creator ● !github"
+              "𝗟𝗶𝘀𝘁 𝗼𝗳 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀: !8ball ● !slap (user) ● !yeet (user) ● !say (words) ● !dadjoke ● !joke ● !howgay ● !owoify (text) ● !rolldice ● !findcute ● !whoami ● !whereami ● !creator ● !github"
           }
         ]);
       }
