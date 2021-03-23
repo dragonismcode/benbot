@@ -14,6 +14,7 @@
   <strong>Installation</strong>
 </h3>
 
+<p align="center">
 If you don't know already, install the packages with this command:
 
 ```
@@ -29,6 +30,7 @@ npm install
 DOGEHOUSE_TOKEN=<token>
 DOGEHOUSE_REFRESH_TOKEN=<refresh-token>
 ```
+</p>
 
 <h3 align="center">
   <strong>Commands</strong>
