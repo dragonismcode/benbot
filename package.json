@@ -13,7 +13,6 @@
   "dependencies": {
     "dogehouse-js": "^0.1.2",
     "dotenv": "^8.2.0",
-    "express": "^4.17.1",
     "node-fetch": "^2.6.1"
   }
 }
