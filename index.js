@@ -312,6 +312,29 @@ const main = async () => {
         ]);
       }
 
+      if (msg.tokens[0].v.toLowerCase() === "!uptime") {
+        function format(seconds) {
+          function pad(s) {
+            return (s < 10 ? "0" : "") + s;
+          }
+          var hours = Math.floor(seconds / (60 * 60));
+          var minutes = Math.floor((seconds % (60 * 60)) / 60);
+          var seconds = Math.floor(seconds % 60);
+
+          return pad(hours) + ":" + pad(minutes) + ":" + pad(seconds);
+        }
+
+        var uptime = process.uptime();
+        console.log(format(uptime));
+
+        await wrapper.sendRoomChatMsg([
+          {
+            t: "text",
+            v: "Uptime: " + format(uptime)
+          }
+        ]);
+      }
+
       if (msg.tokens[0].v.toLowerCase() === "!coinflip") {
         var coinresult = Math.floor(Math.random() * 2);
         console.log(coinresult);
