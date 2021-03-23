@@ -41,6 +41,7 @@ DOGEHOUSE_REFRESH_TOKEN=<refresh-token>
 !findcute - Finds a cute person.. which is you!  <br>
 !whereami - Shows that room you are in.  <br>
 !whoami - Shows what your username and userId.  <br>
+!uptime - Shows how long BenBot has been online.  <br>
 !8ball - Randomly chooses 8ball phrase.  <br>
 !help - Shows all the commands.  <br>
 !howgay - Randomly chooses a percentage of how gay you are.  <br>
