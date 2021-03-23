@@ -134,8 +134,20 @@ const main = async () => {
             if (msg.tokens[0].v.toLowerCase() === "!help") {
                 await wrapper.sendRoomChatMsg([{
                     t: "text",
-                    v: "𝗟𝗶𝘀𝘁 𝗼𝗳 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀: !8ball ● !slap (user) ● !yeet (user) ● !say (words) ● !joke ● !howgay ● !owoify (text) ● !rolldice ● !findcute ● !whoami ● !whereami ● !creator"
+                    v: "𝗟𝗶𝘀𝘁 𝗼𝗳 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀: !8ball ● !slap (user) ● !yeet (user) ● !say (words) ● !joke ● !howgay ● !owoify (text) ● !rolldice ● !findcute ● !whoami ● !whereami ● !creator ● !github"
                 }]);
+            }
+
+            if (msg.tokens[0].v.toLowerCase() === "!github") {
+                await wrapper.sendRoomChatMsg([{
+                        t: "text",
+                        v: "Help us make BenBot: "
+                    },
+                    {
+                        t: "link",
+                        v: "https://github.com/dragonismcode/benbot"
+                    }
+                ]);
             }
 
             if (msg.tokens[0].v.toLowerCase() === "!howgay") {
