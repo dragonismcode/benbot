@@ -1,10 +1,10 @@
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/76412158/112158153-e73fed80-8bb5-11eb-9532-0b4a81358576.png" alt="DogeHouse logo" width="150" height="150"/>
+  <img src="https://user-images.githubusercontent.com/76412158/112184874-a653d300-8bcd-11eb-9786-83c5b1ce60e0.png" alt="DogeHouse logo" width="200" height="200"/>
 </p>
 
-<h3 align="center">
+<h1 align="center">
   <strong>BenBot</strong>
-</h3>
+</h1>
 
 <p align="center">
   BenBot is a random/fun bot for DogeHouse. With a variety of commands, it brings fun to every DogeHouse room.
