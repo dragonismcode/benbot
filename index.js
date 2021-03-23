@@ -144,7 +144,7 @@ const main = async () => {
           {
             t: "text",
             v:
-              "𝗟𝗶𝘀𝘁 𝗼𝗳 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀: !8ball ● !slap (user) ● !yeet (user) ● !say (words) ● !dadjoke ● !joke ● !howgay ● !owoify (text) ● !rolldice ● !findcute ● !whoami ● !whereami ● !creator ● !github"
+              "𝗟𝗶𝘀𝘁 𝗼𝗳 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀: !8ball ● !slap (user) ● !yeet (user) ● !say (words) ● !dadjoke ● !joke ● !howgay ● !owoify (text) ● !rolldice ● !coinflip ● !findcute ● !whoami ● !whereami ● !creator ● !github"
           }
         ]);
       }
@@ -310,6 +310,26 @@ const main = async () => {
             v: "🎲 The dice rolled: " + rollDice
           }
         ]);
+      }
+
+      if (msg.tokens[0].v.toLowerCase() === "!coinflip") {
+        var coinresult = Math.floor(Math.random() * 2);
+        console.log(coinresult);
+        if (coinresult == 0) {
+          await wrapper.sendRoomChatMsg([
+            {
+              t: "text",
+              v: "🪙 The coin landed on: " + "Heads"
+            }
+          ]);
+        } else {
+          await wrapper.sendRoomChatMsg([
+            {
+              t: "text",
+              v: "🪙 The coin landed on: " + "Tails"
+            }
+          ]);
+        }
       }
 
       if (msg.tokens[0].v.toLowerCase() === "!slap") {
