@@ -1,6 +1,5 @@
 require("dotenv").config();
 
-const readline = require("readline");
 const fetch = require("node-fetch");
 const fs = require("fs")
 const {
@@ -57,14 +56,14 @@ const main = async () => {
             userId,
             msg
         }) => {
-            if (msg.tokens[0].v === "!creator") {
+            if (msg.tokens[0].v.toLowerCase() === "!creator") {
                 await wrapper.sendRoomChatMsg([{
                     t: "text",
                     v: `My creator is Dragonism! Special thanks to drunkenpirate47x for helping me make the slap/yeet command!`
                 }]);
             }
 
-            if (msg.tokens[0].v === "!findcute") {
+            if (msg.tokens[0].v.toLowerCase() === "!findcute") {
                 await wrapper.sendRoomChatMsg([{
                     t: "text",
                     v: "Trying to find someone cute... please wait!"
@@ -86,14 +85,14 @@ const main = async () => {
                 }, 2000);
             }
 
-            if (msg.tokens[0].v === "!whereami") {
+            if (msg.tokens[0].v.toLowerCase() === "!whereami") {
                 await wrapper.sendRoomChatMsg([{
                     t: "text",
                     v: "You are currently in: " + theRoom.name
                 }]);
             }
 
-            if (msg.tokens[0].v === "!whoami") {
+            if (msg.tokens[0].v.toLowerCase() === "!whoami") {
                 await wrapper.sendRoomChatMsg([{
                         t: "text",
                         v: "Your name is: "
@@ -109,7 +108,7 @@ const main = async () => {
                 ]);
             }
 
-            if (msg.tokens[0].v.startsWith("!8ball")) {
+            if (msg.tokens[0].v.toLowerCase().startsWith("!8ball")) {
                 async function GenerateAnswer() {
                     var responses = [
                         "It is certain",
@@ -132,14 +131,14 @@ const main = async () => {
                 GenerateAnswer();
             }
 
-            if (msg.tokens[0].v === "!help") {
+            if (msg.tokens[0].v.toLowerCase().toLowerCase() === "!help") {
                 await wrapper.sendRoomChatMsg([{
                     t: "text",
                     v: "𝗟𝗶𝘀𝘁 𝗼𝗳 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀: !8ball ● !slap (user) ● !yeet (user) ● !say (words) ● !joke ● !howgay ● !owoify (text) ● !rolldice ● !findcute ● !whoami ● !whereami ● !creator"
                 }]);
             }
 
-            if (msg.tokens[0].v === "!howgay") {
+            if (msg.tokens[0].v.toLowerCase() === "!howgay") {
                 var howPercentage = Math.floor(Math.random() * 100) + 1;
                 await wrapper.sendRoomChatMsg([{
                         t: "mention",
@@ -152,7 +151,7 @@ const main = async () => {
                 ]);
             }
 
-            if (msg.tokens[0].v === "!say") {
+            if (msg.tokens[0].v.toLowerCase() === "!say") {
                 const newArray = msg.tokens.slice();
                 newArray.shift();
                 const nomraltext = newArray.map((t) => t.v).join(" ");
@@ -163,7 +162,7 @@ const main = async () => {
                 }]);
             }
 
-            if (msg.tokens[0].v === "!owoify") {
+            if (msg.tokens[0].v.toLowerCase() === "!owoify") {
                 const newArray = msg.tokens.slice();
                 newArray.shift();
                 const textToOwo = newArray.map((t) => t.v).join(" ");
@@ -199,7 +198,7 @@ const main = async () => {
                 }
             }
 
-            if (msg.tokens[0].v === "!joke") {
+            if (msg.tokens[0].v.toLowerCase() === "!joke") {
                 function doTheFunny() {
                     fetch("https://v2.jokeapi.dev/joke/Programming")
                         .then((response) => response.json())
@@ -221,7 +220,7 @@ const main = async () => {
                 doTheFunny();
             }
 
-            if (msg.tokens[0].v === "!requestspeaker") {
+            if (msg.tokens[0].v.toLowerCase() === "!requestspeaker") {
                 if (msg.userId === "b4c3169e-9ae4-4fb8-a4a2-bdfce065a6a5") {
                     await connection.send("ask_to_speak", {});
 
@@ -237,7 +236,7 @@ const main = async () => {
                 }
             }
 
-            if (msg.tokens[0].v === "!rolldice") {
+            if (msg.tokens[0].v.toLowerCase() === "!rolldice") {
                 var rollDice = Math.floor(Math.random() * 6) + 1;
 
                 await wrapper.sendRoomChatMsg([{
@@ -246,7 +245,7 @@ const main = async () => {
                 }]);
             }
 
-            if (msg.tokens[0].v === "!slap") {
+            if (msg.tokens[0].v.toLowerCase() === "!slap") {
                 const found_user = await (await wrapper.getRoomUsers()).users.find(
                     (user) => user.username === msg.tokens[1].v
                 );
@@ -333,7 +332,7 @@ const main = async () => {
                 }
             }
 
-            if (msg.tokens[0].v === "!yeet") {
+            if (msg.tokens[0].v.toLowerCase() === "!yeet") {
                 const found_user = await (await wrapper.getRoomUsers()).users.find(
                     (user) => user.username === msg.tokens[1].v
                 );
