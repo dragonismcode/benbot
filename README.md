@@ -1,5 +1,7 @@
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/76412158/112184874-a653d300-8bcd-11eb-9786-83c5b1ce60e0.png" alt="DogeHouse logo" width="200" height="200"/>
+  <a href="https://dogehouse.tv/user/benbot">
+  <img src="https://user-images.githubusercontent.com/76412158/112184874-a653d300-8bcd-11eb-9786-83c5b1ce60e0.png" border="1" width="200" height="200"/>
+  </a>
 </p>
 
 <h1 align="center">
