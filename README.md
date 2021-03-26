@@ -8,9 +8,6 @@
   <strong>BenBot</strong><br>
 </h1>
 
-<h3 align="center">
-  <a href="https://dragonism.gitbook.io/benbot/commands">Commands</a>
-  </h3>
 
 <p align="center">
   BenBot is a random/fun bot for DogeHouse. With a variety of commands, it brings fun to every DogeHouse room.
@@ -40,5 +37,5 @@ DOGEHOUSE_REFRESH_TOKEN=<refresh-token>
 </p>
 
 <h3 align="center">
-  <strong>Commands</strong>
-</h3>
+  <a href="https://dragonism.gitbook.io/benbot/commands">Commands</a>
+  </h3>
